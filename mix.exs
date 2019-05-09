@@ -23,7 +23,7 @@ defmodule DivoRedis.MixProject do
   defp deps do
     [
       {:credo, "~> 1.0", only: :dev, runtime: false},
-      {:divo, "~> 1.1", organization: "smartcolumbus_os"},
+      {:divo, "~> 1.1"},
       {:ex_doc, "~> 0.19", only: :dev}
     ]
   end
