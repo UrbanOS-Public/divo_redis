@@ -36,7 +36,7 @@ defmodule DivoRedis.MixProject do
   defp package do
     [
       organization: "smartcolumbus_os",
-      licenses: ["AllRightsReserved"],
+      licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/SmartColumbusOS/divo-redis"}
     ]
   end
