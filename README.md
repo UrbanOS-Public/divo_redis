@@ -1,4 +1,7 @@
-# DivoRedis
+[![Master](https://travis-ci.org/smartcitiesdata/divo_redis.svg?branch=master)](https://travis-ci.org/smartcitiesdata/divo_redis)
+[![Hex.pm Version](http://img.shields.io/hexpm/v/divo_redis.svg?style=flat)](https://hex.pm/packages/divo_redis)
+
+# Divo Redis
 
 A library implementing the Divo Stack behaviour, providing a pre-configured redis
 via docker-compose for integration testing Elixir apps. The cluster is a
@@ -13,8 +16,8 @@ The package can be installed by adding `divo_redis` to your list of dependencies
 ```elixir
 def deps do
   [
-    {:divo, "~> 1.1", organization: "smartcolumbus_os"},
-    {:divo_redis, "~> 0.1.0", organization: "smartcolumbus_os"}
+    {:divo, "~> 1.1"},
+    {:divo_redis, "~> 0.1.1"}
   ]
 end
 ```
@@ -41,11 +44,16 @@ to the host.
 
 DivoRedis takes no configuration.
 
-See [Divo](https://github.com/smartcolumbusos/divo) for more instructions on using and
+See [Divo](https://github.com/smartcitiesdata/divo) for more instructions on using and
 configuring the Divo library.
 See [antirez/redis](https://github.com/antirez/redis) for further documentation on using
 and configuring the features of these images.
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/divo_kafka](https://hexdocs.pm/divo_redis).
+be found at [https://hexdocs.pm/divo_redis](https://hexdocs.pm/divo_redis).
+
+
+ ## License
+
+SmartCity is released under the Apache 2.0 license - see the license at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
