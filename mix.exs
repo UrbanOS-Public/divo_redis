@@ -4,13 +4,13 @@ defmodule DivoRedis.MixProject do
   def project do
     [
       app: :divo_redis,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
       description: description(),
-      source_url: "https://github.com/SmartColumbusOS/divo-redis"
+      source_url: "https://github.com/smartcitiesdata/divo_redis"
     ]
   end
 
@@ -35,9 +35,9 @@ defmodule DivoRedis.MixProject do
 
   defp package do
     [
-      organization: "smartcolumbus_os",
+      maintainers: ["smartcitiesdata"],
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/SmartColumbusOS/divo-redis"}
+      links: %{"GitHub" => "https://github.com/smartcitiesdata/divo_redis"}
     ]
   end
 end
