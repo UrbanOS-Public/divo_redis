@@ -24,7 +24,7 @@ end
 
 ## Use
 
-In your Mix environment exs file (i.e. config/integation.exs), include the following:
+In your Mix environment exs file (i.e. config/integration.exs), include the following:
 ```elixir
 config :myapp,
   divo: [
@@ -32,10 +32,11 @@ config :myapp,
   ]
 ```
 
-Then you may use the mix tasks `mix docker.start`, `mix docker.stop`, and `mix docker.kill`
-to manually stand up the stack for debugging or interacting via IEx, or include the
-use directly in your integration tests by adding `use Divo` to the top of any test files
-that will serve for integration testing.
+In your integration test specify that you want to use Divo:
+```elixir
+use Divo
+...
+```
 
 The resulting stack will create a single-node Redis instance exposing port 6379
 to the host.
@@ -44,8 +45,7 @@ to the host.
 
 DivoRedis takes no configuration.
 
-See [Divo](https://github.com/smartcitiesdata/divo) for more instructions on using and
-configuring the Divo library.
+See [Divo GitHub](https://github.com/smartcitiesdata/divo) or [Divo Hex Documentation](https://hexdocs.pm/divo) for more instructions on using and configuring the Divo library.
 See [antirez/redis](https://github.com/antirez/redis) for further documentation on using
 and configuring the features of these images.
 
@@ -55,5 +55,4 @@ be found at [https://hexdocs.pm/divo_redis](https://hexdocs.pm/divo_redis).
 
 
 ## License
-
-SmartCity is released under the Apache 2.0 license - see the license at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+Released under [Apache 2 license](https://github.com/smartcitiesdata/divo_redis/blob/master/LICENSE).
