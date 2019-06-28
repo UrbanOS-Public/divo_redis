@@ -1,3 +1,4 @@
 use Mix.Config
 
-# import_config "#{Mix.env()}.exs"
+config :husky,
+  pre_commit: "mix format --check-formatted && mix credo && mix hex.outdated"
