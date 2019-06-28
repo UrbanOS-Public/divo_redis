@@ -17,7 +17,7 @@ The package can be installed by adding `divo_redis` to your list of dependencies
 def deps do
   [
     {:divo, "~> 1.1"},
-    {:divo_redis, "~> 0.1.2"}
+    {:divo_redis, "~> 0.1.4"}
   ]
 end
 ```

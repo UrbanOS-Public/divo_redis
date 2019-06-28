@@ -4,7 +4,7 @@ defmodule DivoRedis.MixProject do
   def project do
     [
       app: :divo_redis,
-      version: "0.1.3",
+      version: "0.1.4",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
