@@ -4,7 +4,7 @@ defmodule DivoRedis.MixProject do
   def project do
     [
       app: :divo_redis,
-      version: "0.1.3",
+      version: "0.1.4",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -26,7 +26,7 @@ defmodule DivoRedis.MixProject do
       {:credo, "~> 1.1", only: :dev, runtime: false},
       {:divo, "~> 1.1"},
       {:ex_doc, "~> 0.19", only: :dev},
-      {:husky, "~> 1.0", only: :dev, runtime: false}
+      {:husky, "~> 1.0", only: [:dev, :test], runtime: false}
     ]
   end
 
