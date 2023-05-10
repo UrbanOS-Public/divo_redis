@@ -16,8 +16,8 @@ The package can be installed by adding `divo_redis` to your list of dependencies
 ```elixir
 def deps do
   [
-    {:divo, "~> 1.1"},
-    {:divo_redis, "~> 0.1.4"}
+    {:divo, "~> 2.0.0"},
+    {:divo_redis, "~> 1.0.0"}
   ]
 end
 ```
